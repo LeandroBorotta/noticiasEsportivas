@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.css">
+    
+
+    <style>
+         .redes{
+            transition: all ease-in-out 0.25s;
+        }
+        .redes:hover{
+            transform: scale(1.10);
+        }
+        .logo{
+            width: 80px;
+        }
+        .select{
+            width: 200px;
+        }
+        .gray{
+            color: #a6a6a6;
+        }
+        .justify{
+            text-align: justify;
+
+        }
+        .azul{
+            background-color: #070E46;
+            color: white;
+        }
+        .tamanho{
+            font-size: 40px !important;
+        }
+
+        .tabela{
+            width: 25%;
+        }
+
+        .noticia p {
+           width: 360px; /
+        }
+
+        @media (max-width: 992px) {
+            .rede-social img{
+            width: 40px;
+        }
+
+            .tabela{
+                width: 90%;
+            }
+
+        }
+
+        @media (max-width: 425px) {
+            .rede-social img{
+            width: 40px;
+        }
+
+
+            .tabela{
+                width: 90%;
+            }
+
+
+        }
+        @media (max-width: 425px) {
+            .justify{
+                text-align: left;
+            }
+
+
+        }
+
+        @media (max-width: 320px) {
+            .titulo{
+                font-size: 20px;
+            }
+            .logo{
+                width: 70px;
+            }
+
+
+            footer p{
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+    <title>Olimpiasp</title>
+</head>
+<body>
+
+
+<header class="container-fluid shadow">    
+    <nav class="container navbar">
+        <div class="d-flex">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <span class="navbar-toggler-icon fs-2"></span>
+            </button>
+        </div>
+       
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="/assets/imagens/logoUnasp.png" class="logo" alt="Logo">
+            <span class="h2 fw-bold text-center titulo">Troféu UNASP</span>
+        </div>
+        <div class="align-items-center d-none d-md-block">
+            <a href="TABELA DE JOGOS OLIMPIASP 2023 EM - ALUNOS.pdf" target="_blank" class="btn azul text-center w-100">Horários dos jogos</a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" id="menu" tabindex="-1">
+        <div class="offcanvas-header">
+            <span class="invisible">Texto invisivel</span>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container h-100 d-flex flex-column">
+                <a href="index.html" class="d-block p-3 text-decoration-none text-dark fw-bolder border-bottom">Voltar</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid azul d-flex align-items-center justify-content-end p-3">
+
+      <select class="form-select select selecionar"  aria-label="Selecionar notícia por tipo">
+            <option selected value="all">Mais recentes</option>
+            <option value="soccer">Mais antigas</option>
+
+      </select>
+</div>
+
+<main class="container-fluid d-flex flex-column flex-lg-row mt-5 mb-5 overflow-hidden">
+    <section class="d-block d-md-none">
+        <div class="container py-5 mb-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3  g-2">
+
+                <div class="col">
+                    <div class="card bg-body-tertiary h-100 noticia volei">
+                        <img src="./assets/imagens/volei1.jpg" alt="Imagem 1" class="card-img-top">
+                        <h4 class="card-header">VOLEI</h4>
+                        <div class="card-body text-break">
+                            <h5 class="card-title">Enfermagem passa</h5>
+                            <p class="card-text justify">
+                                Confira o resumo do jogo <source>
+                            </p>
+                            <h6 class="card-subtitle fw-bold">10/08/2023</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card bg-body-tertiary h-100 noticia volei">
+                        <img src="./assets/imagens/volei2.jpg" alt="Imagem 1" class="card-img-top">
+                        <h4 class="card-header">VOLEI</h4>
+                        <div class="card-body">
+                            <h5 class="card-title">Estrela do Borussia organiza o time</h5>
+                            <p class="card-text justify">
+                                Segue a entrevista com o leo.
+                            </p>
+                            <h6 class="card-subtitle fw-bold">10/08/2023</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-body-tertiary h-100 noticia volei">
+                        <img src="./assets/imagens/volei3.jpg" alt="Imagem 1" class="card-img-top">
+                        <h4 class="card-header">VOLEI</h4>
+                        <div class="card-body">
+                            <h5 class="card-title">Imparável</h5>
+                            <p class="card-text justify">
+                                Firme coloca o jogo no bolso
+                            </p>
+                            <h6 class="card-subtitle fw-bold">10/08/2023</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-body-tertiary h-100 noticia volei">
+                        <img src="./assets/imagens/volei4.jpg" alt="Imagem 1" class="card-img-top">
+                        <h4 class="card-header">VOLEI</h4>
+                        <div class="card-body">
+                            <h5 class="card-title">Terror das outras salas?</h5>
+                            <p class="card-text justify">
+                                Enfermagem segue atropelando
+                            </p>
+                            <h6 class="card-subtitle fw-bold">10/08/2023</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-body-tertiary h-100 noticia volei">
+                        <img src="./assets/imagens/volei5.jpg" alt="Imagem 1" class="card-img-top">
+                        <h4 class="card-header">VOLEI</h4>
+                        <div class="card-body">
+                            <h5 class="card-title">Zebra na competição?</h5>
+                            <p class="card-text justify">
+                                Time comandado por Elias vence
+                            </p>
+                            <h6 class="card-subtitle fw-bold">10/08/2023</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-body-tertiary h-100 noticia volei">
+                        <img src="./assets/imagens/volei6.jpg" alt="Imagem 1" class="card-img-top">
+                        <h4 class="card-header">VOLEI</h4>
+                        <div class="card-body">
+                            <h5 class="card-title">melhor da escola?</h5>
+                            <p class="card-text justify">
+                                jogador do Barcelona é cotado
+                            </p>
+                            <h6 class="card-subtitle fw-bold">10/08/2023</h6>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="d-none d-md-block">
+        <a href="#" class="text-decoration-none text-dark">
+            <div class="d-flex flex-column flex-md-row align-items-center ms-5 mb-4 noticia Volei">
+                <img src="./assets/imagens/volei1.jpg">
+                <div class="ms-3 largura border-bottom">
+                    <p class="fw-bold">Volei</p>
+                    <p class="h3">Enfermagem passa</p>
+                    <p class="justify w-75">Confira o resumo do jogo.</p>
+                    <p class="h6">10/08/10</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="text-decoration-none text-dark">
+            <div class="d-flex flex-column flex-md-row align-items-center ms-5 mb-4 noticia volei">
+                <img src="./assets/imagens/volei2.jpg" alt="">
+                <div class="ms-3 largura border-bottom">
+                    <p class="fw-bold">Volei</p>
+                    <p class="h3">Estrela do Borussia organiza o time</p>
+                    <p class="justify">Segue a entrevista com o leo.</p>
+                    <p class="h6">10/08/10</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="text-decoration-none text-dark">
+            <div class="d-flex flex-column flex-md-row align-items-center ms-5 mb-4 noticia volei">
+                <img src="./assets/imagens/volei3.jpg" alt="">
+                <div class="ms-3 largura border-bottom">
+                    <p class="fw-bold">Volei</p>
+                    <p class="h3">Imparável</p>
+                    <p class="justify">Firme coloca o jogo no bolso.</p>
+                    <p class="h6">10/08/10</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="text-decoration-none text-dark">
+            <div class="d-flex flex-column flex-md-row align-items-center ms-5 mb-4 noticia volei">
+                <img src="./assets/imagens/volei4.jpg" alt="">
+                <div class="ms-3 largura border-bottom">
+                    <p class="fw-bold">Volei</p>
+                    <p class="h3">Terror das outras salas?</p>
+                    <p class="justify">Enfermagem segue atropelando.</p>
+                    <p class="h6">10/08/10</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="text-decoration-none text-dark">
+            <div class="d-flex flex-column flex-md-row align-items-center ms-5 mb-4 noticia Volei">
+                <img src="./assets/imagens/volei5.jpg" alt="">
+                <div class="ms-3 largura border-bottom">
+                    <p class="fw-bold">Volei</p>
+                    <p class="h3">Zebra na competição?</p>
+                    <p class="justify">Time comandado por Elias segue vencendo.</p>
+                    <p class="h6">10/08/10</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="text-decoration-none text-dark">
+            <div class="d-flex flex-column flex-md-row align-items-center ms-5 mb-4 noticia volei">
+                <img src="./assets/imagens/volei6.jpg" alt="">
+                <div class="ms-3 largura border-bottom">
+                    <p class="fw-bold">Volei</p>
+                    <p class="h3">melhor da escola?</p>
+                    <p class="justify">jogador do Barcelona é indicado.</p>
+                    <p class="h6">10/08/10</p>
+                </div>
+            </div>
+        </a>
+
+
+    </section>
+
+    <section class="container tabela">
+        <p class="text-center h2 fw-bold">Classificação</p>
+        <table class="table">
+            <thead>
+              <tr>
+                <th class="text-center" scope="col">Sala</th>
+                <th class="text-center" scope="col">Time</th>
+                <th class="text-center" scope="col">Pontuação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-center" scope="row">3TIB</th>
+                <td class="text-center">Barcelona</td>
+                <td class="text-center">60</td>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">1TIB</th>
+                <td class="text-center">Frankfurt</td>
+                <td class="text-center">50</td>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">3A</th>
+                <td class="text-center">Real Madrid</td>
+                <td class="text-center">40</td>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">2A</th>
+                <td class="text-center">Manchester United</td>
+                <td class="text-center">30</td>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">3A</th>
+                <td class="text-center">Real Madrid</td>
+                <td class="text-center">20</td>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">1A</th>
+                <td class="text-center">Ajax</td>
+                <td class="text-center">10</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        <div class="d-none d-lg-block mt-5 d-flex">
+            <img src="./assets/imagens/propaganda.png" class="img-fluid w-100" alt="">
+        </div>
+        
+    </section>
+
+
+
+</main>
+
+    <section class="container d-flex justify-content-end" aria-label="Page navigation example">
+        <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        </ul>
+    </section>
+    
+<footer class="azul mt-5">
+    <div class="p-5">
+        <div class="border-bottom d-flex align-content-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <p>Olimpiasp | Jogos populares</p>
+            </div>
+            <div class="d-flex align-content-center mb-3">
+                <a href="#" class="rede-social">
+                    <img src="/assets/imagens/insta.png" class="redes" alt="Instagram">
+                </a>
+                <a href="#" class="mx-2 rede-social">
+                    <img src="/assets/imagens/facebook.png" class="redes" alt="facebook">
+                </a>
+                <a href="#" class="rede-social">
+                    <img src="/assets/imagens/twitter.png" class="redes" alt="twitter">
+                </a>
+            </div>
+        </div>
+        <div class="d-flex align-content-center justify-content-between">
+            <p class="mt-3">Leandro Sabino Borotta © 2023 </p>
+            <p class="mt-3">Política de privacidade | Comercial </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

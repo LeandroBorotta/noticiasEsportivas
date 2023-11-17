@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.css">
+    
+
+    <style>
+        .description{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content:start; 
+            align-items: flex-end;
+        }
+        .redes{
+            transition: all ease-in-out 0.25s;
+        }
+        .redes:hover{
+            transform: scale(1.10);
+        }
+        .justify{
+            text-align: justify;
+            
+        }
+        .justify:hover{
+            border-top: 5px #070E46 solid;
+        }
+        .gray{
+            color: #a6a6a6;
+        }
+        .azul{
+            background-color: #070E46;
+            color: white;
+        }
+        .tamanho{
+            font-size: 40px !important;
+        }
+
+        @media (max-width: 768px) {
+            .rede-social img{
+            width: 40px;
+        }
+        }
+
+    </style>
+    <title>Olimpiasp</title>
+</head>
+<body>
+
+
+<header class="container-fluid shadow">    
+    <nav class="container navbar">
+        <div class="d-flex">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <span class="navbar-toggler-icon fs-2"></span>
+            </button>
+        </div>
+       
+        <div class="d-flex align-items-center justify-content-center">
+            <img style="width: 80px;" src="/assets/imagens/logoUnasp.png" alt="Logo">
+            <span class="h2 fw-bold text-center">Troféu UNASP</span>
+        </div>
+        <div class="align-items-center d-none d-md-block">
+            <a href="TABELA DE JOGOS OLIMPIASP 2023 EM - ALUNOS.pdf" target="_blank" class="btn azul text-center w-100">Horários dos jogos</a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" id="menu" tabindex="-1">
+        <div class="offcanvas-header">
+            <span class="invisible">Texto invisivel</span>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container h-100 d-flex flex-column">
+                <a href="futsal.html" class="d-block p-3 text-decoration-none text-dark fw-bolder border-bottom">Futebol</a>
+                <a href="basquete.html" class="d-block p-3 text-decoration-none text-dark fw-bolder border-bottom">Basquete</a>
+                <a href="handball.html" class="d-block p-3 text-decoration-none text-dark fw-bolder border-bottom">Handball</a>
+                <a href="volei.html" class="d-block p-3 text-decoration-none text-dark fw-bolder border-bottom">Volei</a>
+                <a href="galeria.html" class="d-block p-3 text-decoration-none text-dark fw-bolder border-bottom">Galeria</a>
+                <a href="TABELA DE JOGOS OLIMPIASP 2023 EM - ALUNOS.pdf" target="_blank" class="d-sm-block d-md-none btn azul text-center w-100 mt-3">Horários dos jogos</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container mb-5">
+    <section class="mt-5">
+        <div id="myCarousel" class="container-fluid carousel slide d-none d-md-block">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/imagens/pastor.jpg" class="img-fluid" alt="Slide 1">
+                    <div class="description">
+                        <p class="m-5 h1 text-light">Deus sempre em primeiro lugar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagens/diretoria.jpg" alt="Slide 2">
+                    <div class="description">
+                        <p class="m-5 h1 text-light">Diretoria do unasp 2023</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagens/abertura2.jpg" class="img-fluid" alt="Slide 3">
+                    <div class="description">
+                        <p class="m-5 h1 text-light">Melhor abertura??</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagens/pulo.jpg" alt="Slide 4">
+                    <div class="description">
+                        <p class="m-5 h1 text-light">Após muito treino ele acertou o pulo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagens/1A.jpg" alt="Slide 5">
+                    <div class="description">
+                        <p class="m-5 h1 text-light">Favoritos???</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-5 text-light carousel-indicadores text-dark d-none d-md-flex">
+            <div class="border-end flex-fill d-flex align-items-center justify-content-center justify px-3 py-3" data-bs-target="#myCarousel" data-bs-slide-to="0">
+                Apesar do Olimpiasp ser uma competição entre turmas, Nós mantemos nosso foco na missão.
+            </div>
+            <div class="border-end flex-fill d-flex align-items-center justify-content-center justify px-3 py-3" data-bs-target="#myCarousel" data-bs-slide-to="1">
+                Dizem por aí que essa seria a melhor diretoria da história do Unasp, você concorda????
+            </div>
+            <div class="border-end flex-fill d-flex align-items-center justify-content-center justify px-3 py-3" data-bs-target="#myCarousel" data-bs-slide-to="2">
+                    Sala do 1°A ganha o prêmio de melhor abertura após treinarem de ultima e não cair em nenhuma polêmica durante os jogos
+            </div>
+            <div class="border-end flex-fill d-flex align-items-center justify-content-center justify px-3 py-3" data-bs-target="#myCarousel" data-bs-slide-to="3">
+                Muitos diziam que ele não consegueria e ele fez o contrário
+            </div>
+            <div class="border-end flex-fill d-flex align-items-center justify-content-center justify px-3 py-3" data-bs-target="#myCarousel" data-bs-slide-to="4">
+                Será o Ajax campeão de tudo?? Wesley segue forte carregando o time nas costas
+            </div>
+        </div>
+
+        <div class="d-block d-md-none">
+            <div id="smCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/imagens/pastor.jpg" alt="Slide 1">
+                        <div class="description">
+                            <p class="m-5 h1 text-light">Deus sempre em primeiro lugar</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagens/diretoria.jpg"  alt="Slide 2">
+                        <div class="description">
+                            <p class="m-5 h1 text-light">Diretoria do unasp 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagens/abertura2.jpg" alt="">
+                        <div class="description">
+                            <p class="m-5 h1 text-light">Melhor abertura??</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagens/pulo.jpg"  alt="Slide 4">
+                        <div class="description">
+                            <p class="m-5 h1 text-light">Após muito treino ele acertou o pulo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagens/1A.jpg"  alt="Slide 5">
+                        <div class="description">
+                            <p class="m-5 h1 text-light">Favoritos???</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#smCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#smCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#smCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#smCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#smCarousel" data-bs-slide-to="4"></button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="mt-5">
+        <span class="h4 fw-bold gray">Publicidade</span>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mt-2">
+            <div>
+                <a href="#" class="text-decoration-none text-dark fw-bold h5">
+                    <img class="img-fluid" src="./assets/imagens/juan (1).jpg" alt="">
+                    <p>juanmendes assina com a Nike?</p>
+                </a>
+            </div>
+            <div class="mx-3">
+                <a href="#" class="text-decoration-none text-dark fw-bold h5" >
+                    <img class="img-fluid" src="./assets/imagens/gu.jpg" alt="">
+                    <p>Melhor dupla?</p>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="text-decoration-none text-dark fw-bold h5">
+                    <img class="img-fluid" src="./assets/imagens/brolezi.jpg" alt="">
+                    <p>De saída?</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-5 d-flex align-items-center justify-content-center">
+            <a href="noticias.html" class="btn azul text-center w-50">Ver mais</a>
+        </div>
+    </section>
+
+    <section class="mt-5  text-center">
+        <span class="h1 fw-bold">Contagem regressiva</span>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mt-5">
+            <div class="text-center mb-3 mb-md-0">
+                <span class="h6">MESES</span>
+                <p class="tamanho fw-bold">0</p>
+            </div>
+            <div class="text-center mb-3 mb-md-0">
+                <span class="h6">DIAS</span>
+                <p id="dias" class="tamanho fw-bold"></p>
+            </div>
+            <div class="text-center">
+                <span class="h6">HORAS</span>
+                <p id="horas" class="tamanho fw-bold"></p>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="azul mt-5">
+    <div class="p-5">
+        <div class="border-bottom d-flex align-content-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <p>Olimpiasp | Jogos populares</p>
+            </div>
+            <div class="d-flex align-content-center mb-3">
+                <a href="#" class="rede-social">
+                    <img src="/assets/imagens/insta.png" class="redes" alt="Instagram">
+                </a>
+                <a href="#" class="mx-2 rede-social">
+                    <img src="/assets/imagens/facebook.png" class="redes" alt="facebook">
+                </a>
+                <a href="#" class="rede-social">
+                    <img src="/assets/imagens/twitter.png" class="redes" alt="twitter">
+                </a>
+            </div>
+        </div>
+        <div class="d-flex align-content-center justify-content-between">
+            <p class="mt-3">Leandro Sabino Borotta © 2023 </p>
+            <p class="mt-3">Política de privacidade | Comercial </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var carouselIndicators = document.querySelectorAll('.carousel-indicadores div');
+      var isTransitioning = false; 
+    
+      carouselIndicators.forEach(function(indicator) {
+        indicator.addEventListener('mouseover', function() {
+          if (!isTransitioning) {
+            var slideTo = parseInt(indicator.getAttribute('data-bs-slide-to'), 10);
+            var myCarousel = document.querySelector('#myCarousel');
+            var bootstrapCarousel = new bootstrap.Carousel(myCarousel);
+    
+
+            isTransitioning = true;
+    
+ 
+            setTimeout(function() {
+              isTransitioning = false;
+            }, 500); 
+    
+            bootstrapCarousel.to(slideTo);
+          }
+        });
+      });
+    });
+</script>
+
+<script>
+        function calcularDiasRestantes() {
+        var hoje = new Date();
+        var dia30 = new Date(hoje.getFullYear(), hoje.getMonth(), 30);
+
+
+        var diferencaEmMilissegundos = dia30 - hoje;
+
+
+        var diasRestantes = diferencaEmMilissegundos / (1000 * 60 * 60 * 24);
+
+        return diasRestantes;
+    }
+
+
+    function atualizarValor() {
+        var diasElement = document.getElementById('dias');
+        var horasElement = document.getElementById('horas');
+        var diasRestantes = calcularDiasRestantes();
+        var horasRestantes = diasRestantes - Math.round(diasRestantes);
+        var horasRestantes = Math.round( horasRestantes * 10);
+
+        horasElement.textContent = horasRestantes;
+        diasElement.textContent = Math.round(diasRestantes);
+    }
+
+
+    atualizarValor();
+</script>
+    
+
+</body>
+</html>
